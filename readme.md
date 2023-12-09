@@ -4,7 +4,8 @@ This is a solution to the [FAQ accordion challenge on Frontend Mentor](https://w
 
 ### Screenshot
 
-![](./img1.png)(./img2.png)
+![Screenshot of Final version](./img1.png)
+![](./img2.png)
 
 ### Links
 
