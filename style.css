@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap');
+
+:root {
+  --color-white: hsl(0, 0%, 100%);
+  --color-light-pink: hsl(275, 100%, 97%);
+  --color-grayish-pink: hsl(292, 16%, 49%);
+  --color-purple: #c05bf0;
+  --color-dark-purple: hsl(292, 42%, 14%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  padding: 2rem 2rem;
+  min-height: 100vh;
+  width: 100%;
+  background: url('/assets/images/background-pattern-desktop.svg');
+  background-color: var(--color-light-pink);
+  /* background-position: bottom; */
+  background-repeat: no-repeat;
+  background-size: contain;
+  font-family: 'work sans', sans-serif;
+
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.faqs-container {
+  max-width: 50rem;
+  background-color: var(--color-white);
+  padding: 3rem;
+  border-radius: 0.9rem;
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.faq-head {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem 0;
+}
+
+.faq-head img {
+  width: 2.8rem;
+}
+
+.faq-head h2 {
+  font-size: 3.2rem;
+  color: var(--color-dark-purple);
+}
+.faq {
+  display: flex;
+  flex-direction: column;
+  /* gap: 10px; */
+}
+.question-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.4rem 0;
+  cursor: pointer;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+/* &:not(:last-child) */
+.question-box:not(:last-child) {
+  border-bottom: 1px solid var(--color-light-pink);
+}
+
+.question-box:focus,
+.question-box:hover {
+  color: var(--color-purple);
+}
+
+.question-box img {
+  width: 2.4rem;
+}
+
+.answer {
+  max-height: 0;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.4s ease-in;
+  padding: 0 0 10px 0;
+  font-size: 1.6rem;
+}
+
+.active .answer {
+  max-height: 20rem;
+  visibility: visible;
+  opacity: 1;
+}
+
+/* FOR MOBILE [< 600px]  */
+@media only screen and (max-width: 37.5em) {
+  html {
+    font-size: 50.5%;
+  }
+
+  body {
+    background: url('/assets/images/background-pattern-mobile.svg');
+    /* background-position: bottom; */
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
