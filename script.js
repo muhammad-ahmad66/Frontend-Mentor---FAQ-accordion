@@ -28,7 +28,7 @@ function handler(e) {
   const i = icon.src.split('-');
   // console.log(iconPlus);
 
-  if (i[1] === 'plus.svg') {
+  if (i[i.length - 1] === 'plus.svg') {
     icon.src = `/assets/images/icon-minus.svg`;
   } else {
     icon.src = `/assets/images/icon-plus.svg`;

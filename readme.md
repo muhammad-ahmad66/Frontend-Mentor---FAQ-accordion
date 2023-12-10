@@ -10,7 +10,7 @@ This is a solution to the [FAQ accordion challenge on Frontend Mentor](https://w
 ### Links
 
 - Solution URL: (https://github.com/muhammad-ahmad66/Frontend-Mentor---FAQ-accordion)
-- Preview URL: (https://dazzling-fifth.surge.sh/)
+- Preview URL: (https://faq-accordion.surge.sh/)
 
 ### Built with
 
